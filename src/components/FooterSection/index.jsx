@@ -65,14 +65,14 @@ export default function FooterSection() {
               </div>
               <div className="footer_content-right">
                 <div className="footer_content-right-title">
-                  <div className="text-styles-category">Sign up for our newsletter</div>
+                  <div className="text-styles-category">Get In Touch</div>
                 </div>
                 <div className="footer_content-newsletter-form-blockl w-form">
                   <form id="email-form" name="email-form" data-name="Email Form" method="get" className="footer_content-newsletter-form" data-wf-page-id="664c608e027269fcd33e7018" data-wf-element-id="d26d7ba6-564c-4a10-2fa0-cdf5501d1cd0">
                     <input className="footer_content-newsletter-field w-input" maxLength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Email-4" required="" />
                     <input type="submit" data-wait="Please wait..." className="footer_content-newsletter-button w-button" value="Confirm" />
                     <div className="footer_content-newsletter-label">
-                      <div className="text-styles-desc">You can unsubscribe at any time.</div>
+                    <div className="text-styles-desc">For any query, we will contact you soon</div>                  
                     </div>
                   </form>
                   <div className="footer_content-newsletter-s w-form-done">

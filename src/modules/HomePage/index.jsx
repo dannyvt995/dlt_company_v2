@@ -1,21 +1,21 @@
-import AdvantageSection from '@/components/AdvantageSection'
+import AdvantageSection from '@/components/aboutus/AdvantageSection'
 import FaqSection from '@/components/FagSection'
 import FeedBackSection from '@/components/FeedBackSection'
-import IntroAboutusSection from '@/components/IntroAboutusSection'
-import IntroContactSection from '@/components/IntroContactSection'
-import TabService from '@/components/TabService'
+import HeroSection from '@/components/HeroSection'
+import FormContact from '@/components/FormContact'
+import ListServicesSection from '@/components/ListServicesSection'
 import React from 'react'
 
 export default function HomePage() {
   return (
     <>
    
-    <IntroAboutusSection/>
-    <TabService/>
-    <FeedBackSection/>
-    <FaqSection/>
+    <HeroSection/>
+    <ListServicesSection/>
+{/*     <FeedBackSection/> */}
+ {/*    <FaqSection/> */}
   
-    <IntroContactSection/>
+    <FormContact/>
     </>
   )
 }

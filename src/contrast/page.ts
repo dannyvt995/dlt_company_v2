@@ -114,11 +114,11 @@ export const pageDataNew = {
 export const pageData = {
     home : {
         banner:{
-            imgLink: "Banner.jpg"
+            imgLink: "Banner.png"
         }
     },
     aboutus:{
-        thumb:"/Banner.jpg",
+        thumb:"/Banner.png",
         intro :[
             "Our team understands that delivering projects successfully is not enough - we must also build long-lasting and productive relationships with our clients.",
             "With over 20 years of experience in the construction industry, our team of skilled professionals is dedicated to delivering high-quality, innovative, and sustainable solutions for our clients in Civil & Construction, Building & Maintenance and Surface Treatment works.",
@@ -210,6 +210,61 @@ export const pageData = {
 }
 
 
-export const corevalue = {
+export const listServicesData = [
+    {
+        name:"Building",
+        subImgCount:2,
+        isMutil:null,
+        path: "/services/Building/",
+        mainImg:"main.jpg",
+        subImg:["sub1.jpg","sub2.jpg"],
+        title:"Building",
+        des:"High-quality construction services for residential and industrial projects, from design to completion, ensuring quality and on-time delivery."
+    },
+    {
+        name:"Civil and Construction",
+        subImgCount:19,
+        isMutil:null,
+        path: "/services/Civil and Construction/",
+        mainImg:"main.jpg",
+        subImg:["sub1.jpg","sub2.jpg"],
+        title:"Civil and Construction",
+        des:"Infrastructure construction services such as roads, bridges, and water systems, ensuring safety and high standards."
+    },
+    {
+        name:"Construction Supplies",
+        isMutil:[
+            "Bluestone Paver",
+            "Bluestone Seats",
+            "Calcined Bauxite 1-3mm",
+            "F17 Formply"
+        ],
+        subImgCount:[0,0,2,1],
+        path: "/services/Construction Supplies/",
+        mainImg:"main.jpg",
+        subImg:["sub1.jpg","sub2.jpg"],
+        title:"Construction Supplies",
+        des:"Providing quality building materials such as sand, gravel, and cement to meet all project needs."
+    },
+    {
+        name:"Pavement Imprinting",
+        subImgCount:2,
+        isMutil:null,
+        path: "/services/Pavement Imprinting/",
+        mainImg:"main.jpg",
+        subImg:["sub1.jpg","sub2.jpg"],
+        title:"Pavement Imprinting",
+        des:"Creating decorative patterns on concrete or asphalt surfaces, enhancing the aesthetic appeal of outdoor spaces."
+    },
+    {
+        name:"Surface Treatment",
+        subImgCount:8,
+        isMutil:null,
+        path: "/services/Surface Treatment/",
+        mainImg:"main.jpg",
+        subImg:["sub1.jpg","sub2.jpg"],
+        title:"Surface Treatment",
+        des:"Surface treatments for construction materials to improve durability, waterproofing, and aesthetics."
+    }
+]
     
-}

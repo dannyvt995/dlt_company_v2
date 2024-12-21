@@ -1,10 +1,10 @@
-import IntroContactSection from '@/components/IntroContactSection'
+import FormContact from '@/components/FormContact'
 import React from 'react'
 
 export default function Contactus() {
   return (
     <>
-    <IntroContactSection/>
+    <FormContact/>
     </>
   )
 }

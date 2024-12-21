@@ -1,0 +1,43 @@
+.form {
+    width: 60%;
+
+}
+.form button {
+    margin-top:2rem;
+}
+.field {
+    margin-bottom:1rem;
+}
+.label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #f6f6f6;
+}
+.err {
+    position: absolute;
+    bottom: -1.2rem;
+    color:red;
+    font-size: .72rem;
+    padding: 0;
+    margin:0;
+}
+.label input,.label select {
+    width: 70%;
+    border: 1px solid #e2e2e2;
+    border-radius: var(--radius-button);
+    color: var(--black);
+    padding: .781vw 1.563vw;
+}
+
+@media screen and (max-width: 479px) {
+    .form {
+        width: 100% !important;
+    
+    }
+    .label input,.label select {
+        width: 100% !important;
+        padding: .5rem 1rem;
+    }
+}

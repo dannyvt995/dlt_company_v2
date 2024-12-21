@@ -1,4 +1,5 @@
 import React from 'react'
+import BackgroundGrid from '../BackgroundGrid'
 
 export default function HeroSection() {
     return (
@@ -20,6 +21,7 @@ export default function HeroSection() {
                             <img src="/banner_main.jpg" alt="" className="about-hero_image" />
                         </div>
                     </div>
+                    
                 </div>
             </section>
         

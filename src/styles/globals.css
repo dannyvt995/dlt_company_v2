@@ -55,7 +55,7 @@ body {
   ::-webkit-scrollbar {
       width: 5px;
       height: 5px;
-      background: #000000;
+      background: #00000000;
   }
 }
 
@@ -3011,8 +3011,9 @@ a {
 .hero_animation-bg {
   z-index: 0;
   width: 100vw;
-  position: absolute;
-  inset: 0% 0% 0% 2vw
+  position: fixed;
+  inset: 0% 0% 0% 2vw;
+  z-index: -1;
 }
 
 .hero_bg-one {
@@ -3265,7 +3266,8 @@ a {
 
 .q-wrapper {
   align-items: center;
-  display: flex
+  display: flex;
+  padding-bottom: 1rem;
 }
 
 .press_content {
@@ -3761,7 +3763,9 @@ a {
 }
 
 .footer_wrapper {
-  color: #f9f9f9;
+  background-color: #f9f9f9;
+position: relative;
+z-index:1;
   border-top-left-radius: 1.875vw;
   border-top-right-radius: 1.875vw;
   box-shadow: .078vw .156vw .977vw #2d2d2d1a
@@ -6992,6 +6996,7 @@ a {
   }
 
   .footer_content-right {
+    display: none;
       grid-column-gap: 4.651vw;
       grid-row-gap: 4.651vw;
       flex-flow: column;
@@ -6999,7 +7004,7 @@ a {
       align-items: stretch;
       width: 100%;
       padding-top: 5.581vw;
-      display: flex
+   
   }
 
   .footer_content-newsletter-form {

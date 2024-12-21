@@ -48,7 +48,7 @@ export default function ListServicesSection() {
                 <strong>
                   Let's Explore
                   <br />
-                  Our Services
+                  <span style={{color:'var(--yellow)'}}>Our Services</span>
                 </strong>
               </h2>
             </div>

@@ -29,15 +29,16 @@
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
-    padding: 3.563vw 1.563vw 1.563vw 0;
+   
     display: flex;
     max-width: 72%;
 }
 .titleServiceBody{
-    padding: 0 1.563vw 1.563vw 0;
+   
 }
 .isItemServices {
-    min-height: 200px;
+
+    height:30vw;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -51,27 +52,78 @@
 }
 @media screen and (max-width: 479px) {
     .isItemServices  {
+        height:fit-content !important;
         flex-direction: column !important;
     }
+    .imgItemService {
+        height: 50vw !important;
+    }
     .imgItemService,.isItemServicesInfo {
-        width:100% !important;
+        max-width:100% !important;
     }
     .isItemServicesInfo {
+     
         padding: 1rem !important;
     }
   }
   
+
+  .titleServiceBody {
+    height: fit-content;
+  }
 .imgItemService {
-    width:50%;
+    max-width:50%;
+    height: 100%;
+    margin:0 !important;
+  
 }
 .imgItemService img {
     object-fit: cover;
     display: block;
     height: 100%;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
 }
 .isItemServicesInfo {
-    width: 36.133vw;
+    max-width:50%;
+    padding: 2.5vw;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
 }
 
-
-
+.listItemServices .swiper-button-prev:after,.listItemServices .swiper-button-next:after {
+    font-size: 1.2rem !important;
+    color: var(--yellow) !important;
+    font-weight: bold !important;
+}
+.listItemServices .swiper-button-prev:before,.listItemServices .swiper-button-next:before  {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 5px;
+    z-index: -1;
+}
+..swiper-slide {
+    position: relative;
+}
+.tag_sub_slider {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: .5vw 1.5vw;
+    background-color: #fff;
+    color: black;
+    border-radius: var(--radius-block);
+    font-size: .72rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 1
+}

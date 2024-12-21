@@ -2267,7 +2267,9 @@ a {
 .padding-global {
   padding: 5.469vw 9.961vw
 }
-
+.padding-global-top {
+  padding-top: 5.469vw;
+}
 .padding-global.is-hero,.padding-global.is-pricing {
   z-index: 2;
   margin-top: 0;
@@ -3977,6 +3979,12 @@ a {
   flex-flow: column;
   display: flex
 }
+@media screen and (max-width: 479px) {
+  .legal-wrapper  {
+      padding: 5.469vw 5.58vw 18.14vw;
+  }
+}
+
 
 .legal_title {
   grid-column-gap: 1.64vw;
@@ -6176,7 +6184,9 @@ a {
   .padding-global {
       padding: 5.469vw 5.58vw 18.14vw
   }
-
+  .padding-global-top {
+    padding-top:20vw;
+}
   .padding-global.is-hero {
       padding-top: 41.86vw;
       padding-bottom: 18.14vw

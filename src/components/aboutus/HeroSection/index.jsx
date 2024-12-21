@@ -3,7 +3,7 @@ import s from "./style.module.css";
 export default function HeroSection() {
   return (
     <section className="section_about-hero">
-      <div className={s.padding}>
+        <div className="padding-global-top">
         <div className="container-medium">
         {/*   <div className={s.wrapper}>
             <img

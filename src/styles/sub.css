@@ -46,9 +46,21 @@
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: var(--radius-block);
-    margin-bottom: .781vw;
+    margin-bottom: 1.234rem;
     box-shadow: .078vw .078vw .586vw #7d84921a;
 }
+@media screen and (max-width: 479px) {
+    .isItemServices  {
+        flex-direction: column !important;
+    }
+    .imgItemService,.isItemServicesInfo {
+        width:100% !important;
+    }
+    .isItemServicesInfo {
+        padding: 1rem !important;
+    }
+  }
+  
 .imgItemService {
     width:50%;
 }

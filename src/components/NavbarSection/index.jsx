@@ -14,21 +14,21 @@ export default function NavbarSection() {
 
   const handleOpenMenu = () => {
     buttonClose.current.style.display = 'flex'
-    gsap.timeline().to(navbarMobiModal.current,{
+    gsap.timeline().set(buttonOpen.current,{
+      opacity:0
+    }).to(navbarMobiModal.current,{
       y:"100vh",
       duration:1
-    }).to(buttonOpen.current,{
-      opacity:0
-    },"<")
+    })
   }
   const handleCloseMenu = () => {
     buttonClose.current.style.display = 'none'
-    gsap.timeline().to(navbarMobiModal.current,{
+    gsap.timeline().set(buttonOpen.current,{
+      opacity:1
+    }).to(navbarMobiModal.current,{
       y:"0vh",
       duration:1
-    }).to(buttonOpen.current,{
-      opacity:1
-    },"<")
+    })
   }
   return (
     <nav  className="header-wrapper">

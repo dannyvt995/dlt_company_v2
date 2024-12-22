@@ -189,7 +189,7 @@ export default function FooterSection() {
                       data-wf-element-id="d26d7ba6-564c-4a10-2fa0-cdf5501d1cd0"
                     >
                       <input
-                        placeholder="Fill your email"
+                        placeholder=""
                         type="text"
                         name="email"
                         value={formDataFooter.email}

@@ -188,7 +188,7 @@ export default function FormContact() {
                     type="submit"
                     className="button f-width btn-demo w-inline-block"
                   >
-                    <div className="text-styles-button">Book a call</div>
+                    <div className="text-styles-button">Contact us</div>
                   </button>
                 </form>
               </div>

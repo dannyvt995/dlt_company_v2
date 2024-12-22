@@ -50,9 +50,9 @@ export default function NavbarSection() {
           </div>
           <div className="header_right-wrap">
             <div className="header_right">
-              <a href="/" target="_blank" className="small-button is-primal btn-demo mobile-hide w-inline-block">
+             {/*  <a href="/" target="_blank" className="small-button is-primal btn-demo mobile-hide w-inline-block">
                 <div className="text-styles-small-button">Let in touch</div>
-              </a>
+              </a> */}
             </div>
             <div className="header-btn-wrap">
               <div  className="header_menu-btn">
@@ -73,11 +73,11 @@ export default function NavbarSection() {
            
        
           </div>
-          <div className="mobile-menu_buttons-wrap">
+          {/* <div className="mobile-menu_buttons-wrap">
             <a href="/contact-us" target="_blank" className="button is-primal btn-demo w-inline-block">
               <div className="text-styles-button">Book a demo</div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

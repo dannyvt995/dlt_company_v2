@@ -15,7 +15,7 @@ export default function HeroSection() {
                                     DLT Technical Services
                                 </h1>
                                 <div className="about-hero_desc">
-                                    <div className="text-styles-content">We provide comprehensive solutions for construction projects, from civil construction and material supply to surface treatment.</div>
+                                    <div className="text-styles-content">Civil & construction, building,<br/>material supply and surface treatment.</div>
                                 </div>
                             </div>
                             <img src="/banner_main.jpg" alt="" className="about-hero_image" />

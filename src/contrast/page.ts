@@ -40,7 +40,7 @@ export const breedCum = {
         des:"Explore Gallery Projects"
     },
     service: {
-        name:"Our Service",
+        name:"Our Services",
         des:"The type of works carried out by DLT Technical Services"
     },
 }
@@ -62,13 +62,13 @@ export const navbarContrast = {
             link:"/about-us"
         },
         {
-            name:"Our Service",
+            name:"Our Services",
             link:"/our-service"
-        },
+        }/* ,
         {
             name:"Gallery",
             link:"/our-gallery"
-        },
+        } */,
         {
             name:"Contact",
             link:"/contact-us"
@@ -213,7 +213,7 @@ export const pageData = {
 export const listServicesData = [
     {
         name:"Building",
-        subImgCount:2,
+        subImgCount:4,
         isMutil:null,
         path: "/services/Building/",
         mainImg:"main.jpg",

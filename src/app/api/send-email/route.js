@@ -43,7 +43,7 @@ export async function POST(request) {
         ...mailOptions,
         ...generateEmailContent(data),
         subject: "Info from website dlt company",
-        cc: "creatiflow.danny@gmail.com",
+        cc: "admin@dlttechnicalservices.com.au",
       });
   
       return NextResponse.json({ message: "Data received successfully" }, { status: 200 });

@@ -11,11 +11,11 @@ export default function HomePage() {
     <>
    
     <HeroSection/>
-    <ListServicesSection/>
+  
 {/*     <FeedBackSection/> */}
  {/*    <FaqSection/> */}
   
-    <FormContact/>
+  
     </>
   )
 }

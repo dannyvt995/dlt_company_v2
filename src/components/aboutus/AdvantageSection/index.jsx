@@ -74,13 +74,13 @@ export default function AdvantageSection() {
                                     <p>Extremely important to us is the employment of apprentices, graduates and students as this allows us to cement our future as well as theirs.</p>
                                 </div>
                                 <br/><br/>
-                                <div className="text-styles-text text-color-gray">
+                              {/*   <div className="text-styles-text text-color-gray">
 
                                     <span className="text-weight-bold text-color-black">DLT Technical Services</span>
                                     <br />
                                     PO BOX 260, BRAYBROOK<br />
                                     VIC 3019<br />
-                                </div>
+                                </div> */}
                             </div>
 
 

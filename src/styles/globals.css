@@ -3012,7 +3012,7 @@ a {
   z-index: 0;
   width: 100vw;
   position: fixed;
-  inset: 0% 0% 0% 2vw;
+  inset: 0% 0% 0% 0vw;
   z-index: -1;
 }
 
@@ -3777,7 +3777,14 @@ z-index:1;
   padding-bottom: 4.688vw;
   display: flex
 }
-
+.this_map {
+  max-width: 100%;
+}
+.this_map iframe {
+  border: 1px solid #17161635;
+  border-radius: var(--radius-button);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
 .footer_contacts {
   grid-column-gap: 1.563vw;
   grid-row-gap: 1.563vw;
@@ -7179,7 +7186,7 @@ z-index:1;
 
   .about-product_wrapper {
       grid-column-gap: 11.163vw;
-      grid-row-gap: 11.163vw;
+      grid-row-gap: 5.163vw;
       flex-flow: column;
       justify-content: space-between;
       align-items: flex-start

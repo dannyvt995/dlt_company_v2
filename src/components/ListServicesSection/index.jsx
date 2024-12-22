@@ -9,14 +9,18 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper/modules";
+import Link from "next/link";
 export const TemplateBlock = (params) => {
   return (
-    <div className="isItemServicesInfo">
+ 
+  <div className="isItemServicesInfo">
+     
       <div className="titleServiceHead">
         <div className="q-wrapper">
           <h3 className="text-styles-h3">{params.name}</h3>
         </div>
       </div>
+
       <div className="titleServiceBody">
         <div className="text-styles-content">
           {params.des}
@@ -31,7 +35,10 @@ export const TemplateBlock = (params) => {
           )}
         </div>
       </div>
+      <Link className="button-item-service" href={`/our-service/${params.url}`}>Explore</Link>
     </div>
+
+  
   );
 };
 export default function ListServicesSection() {
@@ -62,6 +69,7 @@ export default function ListServicesSection() {
           </div>
           <ul className="listItemServices">
             {listServicesData.map((typeService, index) => {
+             
               const subImagesPath = [];
               if (typeof typeService.subImgCount === "number") {
                 for (let i = 0; i < typeService.subImgCount; i++) {
@@ -81,11 +89,13 @@ export default function ListServicesSection() {
               }
 
               return (
+                
                 <li
                   key={index}
                   role="listitem"
                   className="w-dyn-item isItemServices"
                 >
+                  
                   <Swiper
                     navigation={true}
                     modules={[Navigation]}
@@ -101,13 +111,16 @@ export default function ListServicesSection() {
                       </SwiperSlide>
                     ))}
                   </Swiper>
-
+                  
                   <TemplateBlock
+                  url={typeService.url}
                     des={typeService.des}
                     name={typeService.name}
                     isMutil={typeService.isMutil}
                   />
+                   
                 </li>
+            
               );
             })}
           </ul>

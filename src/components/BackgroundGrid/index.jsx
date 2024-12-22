@@ -3,6 +3,7 @@ import React from "react";
 export default function BackgroundGrid() {
   return (
     <div className="hero_animation-bg">
+      
       <img
         src="/bg/bg-g-1.svg"
         loading="lazy"

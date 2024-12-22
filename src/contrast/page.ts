@@ -64,11 +64,27 @@ export const navbarContrast = {
         {
             name:"Our Services",
             link:"/our-service"
-        }/* ,
+        },/* ,
         {
-            name:"Gallery",
-            link:"/our-gallery"
-        } */,
+            name:"Building",
+            link:"/building"
+        },
+        {
+            name:"Civil and Construction",
+            link:"/civil-and-construction"
+        },
+        {
+            name:"Construction Supplies",
+            link:"/construction-supplies"
+        },
+        {
+            name:"Pavement Imprinting",
+            link:"/pavement-imprinting"
+        },
+        {
+            name:"Surface Treatment",
+            link:"/surface-treatment"
+        }, */
         {
             name:"Contact",
             link:"/contact-us"
@@ -213,7 +229,8 @@ export const pageData = {
 export const listServicesData = [
     {
         name:"Building",
-        subImgCount:6,
+        url:"/building",
+        subImgCount:7,
         isMutil:null,
         path: "/services/Building/",
         mainImg:"main.jpg",
@@ -223,7 +240,8 @@ export const listServicesData = [
     },
     {
         name:"Civil and Construction",
-        subImgCount:19,
+        url:"/civil-and-construction",
+        subImgCount:20,
         isMutil:null,
         path: "/services/Civil and Construction/",
         mainImg:"main.jpg",
@@ -233,6 +251,7 @@ export const listServicesData = [
     },
     {
         name:"Construction Supplies",
+        url:"/construction-supplies",
         isMutil:[
             "Bluestone Paver",
             "Bluestone Seats",
@@ -248,7 +267,8 @@ export const listServicesData = [
     },
     {
         name:"Pavement Imprinting",
-        subImgCount:2,
+        url:"/pavement-imprinting",
+        subImgCount:3,
         isMutil:null,
         path: "/services/Pavement Imprinting/",
         mainImg:"main.jpg",
@@ -258,7 +278,8 @@ export const listServicesData = [
     },
     {
         name:"Surface Treatment",
-        subImgCount:8,
+        url:"/surface-treatment",
+        subImgCount:9,
         isMutil:null,
         path: "/services/Surface Treatment/",
         mainImg:"main.jpg",

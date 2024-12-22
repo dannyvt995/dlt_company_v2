@@ -2,12 +2,22 @@
     transform: scaleY(.9);
 }
 
-
+.hero_big_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #e6e6e6;
+}
 .section_about-hero {
     position: relative;
 }
 
-
+.clear-style {
+    text-decoration: none;
+    background-color: unset;
+    color: unset;
+    
+}
 .header_nav {
     list-style-type: none;
     margin:0;
@@ -37,7 +47,7 @@
    
 }
 .isItemServices {
-
+    position: relative;
     height:30vw;
     overflow: hidden;
     display: flex;
@@ -81,6 +91,22 @@
     margin:0 !important;
   
 }
+.button-item-service {
+    position: absolute;
+    bottom: 2.5vw;
+    right: 2.5vw;
+    color: #8a8a8a;
+    font-style: italic;
+    padding: .313vw .781vw;
+    border-radius: var(--radius-button);
+}
+.button-item-service:hover {
+    color: var(--yellow);
+    border: 1px solid gray;
+    border-color: #e2e2e2;
+    box-shadow: .078vw .078vw .586vw #7d84921a;
+
+}
 .imgItemService img {
     object-fit: cover;
     display: block;
@@ -96,13 +122,15 @@
     flex-direction: column;
    justify-content: center;
 }
-
-.listItemServices .swiper-button-prev:after,.listItemServices .swiper-button-next:after {
+.swiper-button-prev,.swiper-button-next {
+    z-index: 99 !important;
+}
+.swiper-button-prev:after,.swiper-button-next:after {
     font-size: 1.2rem !important;
     color: var(--yellow) !important;
     font-weight: bold !important;
 }
-.listItemServices .swiper-button-prev:before,.listItemServices .swiper-button-next:before  {
+.swiper-button-prev:before,.swiper-button-next:before  {
     content:"";
     position: absolute;
     width: 100%;
@@ -144,4 +172,75 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 9995;
+}
+
+
+.pagenotfound {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pagenotfound h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+.pagenotfound span {
+    font-style: italic;
+text-align: center;
+    font-size: 1.1rem;
+    width: fit-content;
+    height: fit-content;
+}
+@media screen and (max-width: 479px) {
+    .subonSlugStyle {
+        flex-wrap:  unset !important;
+        flex-direction: column;
+    }
+    .subonSlugStyle li {
+        width: 100% !important;
+    
+    }
+
+}
+.subonSlugStyle {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    margin:0;
+}
+.subonSlugStyle li {
+    width: 50%;
+
+}
+.imgItemServiceRelated {
+    background-color: unset !important;
+}
+.imgItemServiceRelated .swiper-slide {
+
+}
+.info-sub-related h3{
+    position: relative;
+    color: #8a8a8a;
+    background-color: white;
+    font-size: 1rem !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px 0  10px 20px;
+   
+}
+.btnonSlider {
+    border-radius: var(--radius-block);
+    overflow: hidden;
+    display: block;
+}
+
+@media (max-width:469px) {
+    .imgItemServiceRelated .swiper-slide {
+       
+    }
 }

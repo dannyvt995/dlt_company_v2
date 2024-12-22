@@ -26,10 +26,11 @@
     height: fit-content;
     padding: .5vw 1.5vw;
     background-color: #fff;
-    color: black;
+  
     border-radius: var(--radius-block);
-    font-size: 1vw;
+    
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: .2;
 }
 .container img {
     object-fit: cover;

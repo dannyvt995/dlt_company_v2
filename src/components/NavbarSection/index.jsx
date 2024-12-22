@@ -36,7 +36,7 @@ export default function NavbarSection() {
         <div className="header">
           <div className="header_left">
             <Link href="/" aria-current="page" className="header_logo w-inline-block w--current">
-              <img src="logo_clear.png" loading="lazy" alt="Benetics logo" className="image scaleYLogo" />
+              <img src={`${process.env.NEXT_PUBLIC_URL}logo_clear.png`} loading="lazy" alt="Benetics logo" className="image scaleYLogo" />
             </Link>
             <ul className="header_nav">
               {navbarContrast.listItems.map((item,index) => (

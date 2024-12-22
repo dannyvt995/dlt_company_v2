@@ -1,5 +1,5 @@
 import React from 'react'
-import { navbarContrast, typeServices } from '@/contrast/page'
+import { navbarContrast, listServicesData } from '@/contrast/page'
 import Link from 'next/link'
 
 export default function FooterSection() {
@@ -12,7 +12,7 @@ export default function FooterSection() {
               <div className="footer_content-left">
                 <div className="footer_contacts">
                   <a href="/en" aria-current="page" className="footer_logo w-inline-block w--current">
-                    <img src="logo_clear.png" loading="lazy" alt="" className="image scaleYLogo" />
+                    <img src={`${process.env.NEXT_PUBLIC_URL}logo_clear.png`} loading="lazy" alt="" className="image scaleYLogo" />
                   </a>
                   <div className="footer_contacts-desc">
                     <div data-country="worldwide" className="text-styles-text">
@@ -28,7 +28,7 @@ export default function FooterSection() {
                 <div className="footer_links-wrapper">
                   <div className="footer_links-wrap">
                     <div className="footer_links-title">
-                      <div className="text-styles-category">Menu</div>
+                      <div className="text-styles-category"><span style={{color:"var(--yellow)"}}>Menu</span></div>
                     </div>
                     
                     {navbarContrast.listItems.map((item,index) => (
@@ -40,13 +40,13 @@ export default function FooterSection() {
                   </div>
                   <div className="footer_links-wrap features">
                     <div className="footer_links-title">
-                      <div className="text-styles-category">SERVICES AREAS</div>
+                      <div className="text-styles-category"><span style={{color:"var(--yellow)"}}>SERVICES AREAS</span></div>
                     </div>
                     <div className="footer_features-collection-list-wrapper w-dyn-list">
                       <div role="list" className="footer_features-collection-list w-dyn-items">
-                        {typeServices.map((item,index) => (
+                        {listServicesData.map((item,index) => (
                           <div role="listitem" className="footer_features-collection-item w-dyn-item">
-                              <Link key={index} href="/" className="text-styles-text link">{item}</Link>
+                              <Link key={index} href={`/our-service${item.url}`} className="text-styles-text link">{item.name}</Link>
                           </div>
                         ))}
                         
@@ -65,12 +65,15 @@ export default function FooterSection() {
               </div>
               <div className="footer_content-right">
                 <div className="footer_content-right-title">
-                  <div className="text-styles-category">Get In Touch</div>
+                  <div className="text-styles-category"><span style={{color:"var(--yellow)"}}>get in touch</span></div>
                 </div>
                 <div className="footer_content-newsletter-form-blockl w-form">
                   <form id="email-form" name="email-form" data-name="Email Form" method="get" className="footer_content-newsletter-form" data-wf-page-id="664c608e027269fcd33e7018" data-wf-element-id="d26d7ba6-564c-4a10-2fa0-cdf5501d1cd0">
                     <input className="footer_content-newsletter-field w-input" maxLength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Email-4" required="" />
-                    <input type="submit" data-wait="Please wait..." className="footer_content-newsletter-button w-button" value="Confirm" />
+                    <input type="submit" data-wait="Please wait..." className="footer_content-newsletter-button w-button" value="Send" />
+                    {/* <div className='this_map'>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25225.771449196087!2d144.8332644525979!3d-37.784850139663995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65dc0ad1b7959%3A0x1c045678462e3ae0!2sBraybrook%20VIC%203019%2C%20Australia!5e0!3m2!1sen!2s!4v1734845731726!5m2!1sen!2s" width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div> */}
                     <div className="footer_content-newsletter-label">
                     <div className="text-styles-desc">For any query, we will contact you soon</div>                  
                     </div>
@@ -84,7 +87,7 @@ export default function FooterSection() {
             </div>
             <div className="live-div"></div>
             <div className="footer_label">
-              <div className="text-styles-text text-color-gray">© 2024 "DLT Technical Services. All Rights Reserved</div>
+              <div className="text-styles-text text-color-gray">© 2024 DLT Technical Services. All Rights Reserved</div>
              
             </div>
           </div>

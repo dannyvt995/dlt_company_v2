@@ -33,7 +33,9 @@ export const TemplateBlock = (params) => {
           ) : (
             <></>
           )}
+     
         </div>
+       
       </div>
       <Link className="button-item-service" href={`/our-service/${params.url}`}>Explore</Link>
     </div>

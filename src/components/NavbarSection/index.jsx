@@ -4,9 +4,11 @@ import gsap from 'gsap'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React,{useEffect, useState, useRef} from 'react'
+import BackgroundGrid from '../BackgroundGrid'
+import { useRouter } from 'next/navigation'
 
 export default function NavbarSection() {
-  const [isOpenMenu,setIsOpenMenu] = useState(false)
+  const router = useRouter()
   const navbarMobiModal = useRef(null)
   const buttonOpen = useRef(null)
   const buttonClose = useRef(null)
@@ -18,7 +20,8 @@ export default function NavbarSection() {
       opacity:0
     }).to(navbarMobiModal.current,{
       y:"100vh",
-      duration:1
+      duration:1,
+      ease:'power3.out'
     })
   }
   const handleCloseMenu = () => {
@@ -27,8 +30,13 @@ export default function NavbarSection() {
       opacity:1
     }).to(navbarMobiModal.current,{
       y:"0vh",
-      duration:1
+      duration:1,
+      ease:'power3.out'
     })
+  }
+  const handleButtonModalClick = () => {
+    router.push('/contact-us')
+    handleCloseMenu()
   }
   return (
     <nav  className="header-wrapper">
@@ -36,7 +44,7 @@ export default function NavbarSection() {
         <div className="header">
           <div className="header_left">
             <Link href="/" aria-current="page" className="header_logo w-inline-block w--current">
-              <img src={`${process.env.NEXT_PUBLIC_URL}logo_clear.png`} loading="lazy" alt="Benetics logo" className="image scaleYLogo" />
+              <img src={`logo_clear.png`} loading="lazy" alt="Benetics logo" className="image scaleYLogo" />
             </Link>
             <ul className="header_nav">
               {navbarContrast.listItems.map((item,index) => (
@@ -73,11 +81,12 @@ export default function NavbarSection() {
            
        
           </div>
-          {/* <div className="mobile-menu_buttons-wrap">
-            <a href="/contact-us" target="_blank" className="button is-primal btn-demo w-inline-block">
-              <div className="text-styles-button">Book a demo</div>
-            </a>
-          </div> */}
+          <BackgroundGrid/>
+          <div className="mobile-menu_buttons-wrap">
+            <span  onClick={() => handleButtonModalClick()} className="button is-primal btn-demo w-inline-block">
+              <div className="text-styles-button" >Get in touch</div>
+            </span>
+          </div>
         </div>
       </div>
     </nav>

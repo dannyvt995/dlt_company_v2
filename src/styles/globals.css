@@ -7733,13 +7733,16 @@ z-index:1;
       inset: -100vh 0% 0%
   }
 
-  .mobile-menu_links-wrap {
-      grid-column-gap: 4.651vw;
-      grid-row-gap: 4.651vw;
-      flex-flow: column;
-      display: flex
+  .mobile-menu_links-wrap .w--current {
+     color:var(--yellow);
   }
 
+  .mobile-menu_links-wrap {
+    grid-column-gap: 4.651vw;
+    grid-row-gap: 4.651vw;
+    flex-flow: column;
+    display: flex
+}
   .mobile-menu_buttons-wrap {
       grid-column-gap: 3.721vw;
       grid-row-gap: 3.721vw;

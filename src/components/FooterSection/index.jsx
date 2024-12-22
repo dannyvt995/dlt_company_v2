@@ -12,7 +12,7 @@ export default function FooterSection() {
               <div className="footer_content-left">
                 <div className="footer_contacts">
                   <a href="/en" aria-current="page" className="footer_logo w-inline-block w--current">
-                    <img src={`${process.env.NEXT_PUBLIC_URL}logo_clear.png`} loading="lazy" alt="" className="image scaleYLogo" />
+                    <img src={`logo_clear.png`} loading="lazy" alt="" className="image scaleYLogo" />
                   </a>
                   <div className="footer_contacts-desc">
                     <div data-country="worldwide" className="text-styles-text">

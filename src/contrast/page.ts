@@ -213,7 +213,7 @@ export const pageData = {
 export const listServicesData = [
     {
         name:"Building",
-        subImgCount:4,
+        subImgCount:6,
         isMutil:null,
         path: "/services/Building/",
         mainImg:"main.jpg",

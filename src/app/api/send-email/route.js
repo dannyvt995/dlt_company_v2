@@ -43,7 +43,7 @@ export async function POST(request) {
         ...mailOptions,
         ...generateEmailContent(data),
         subject: "Info from website dlt company",
-       // cc: "admin@dlttechnicalservices.com.au",
+        cc: "admin@dlttechnicalservices.com.au",
       
       });
   

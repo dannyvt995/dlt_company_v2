@@ -6,7 +6,7 @@ export default function OurServices() {
   return (
     <section className="ourServicesPage">
        <ListServicesSection />
-       <FormContact/>
+     {/*   <FormContact/> */}
     </section>
   );
 }

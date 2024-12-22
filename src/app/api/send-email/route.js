@@ -4,8 +4,8 @@ import { mailOptions, transporter } from "../../../config/nodemailer";
 
 const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
-  phone: "Email",
-  email: "Phone number",
+  phone: "Phone number",
+  email: "Email",
   typeService: "Type Service",
 };
 
@@ -43,7 +43,8 @@ export async function POST(request) {
         ...mailOptions,
         ...generateEmailContent(data),
         subject: "Info from website dlt company",
-        cc: "admin@dlttechnicalservices.com.au",
+       // cc: "admin@dlttechnicalservices.com.au",
+      
       });
   
       return NextResponse.json({ message: "Data received successfully" }, { status: 200 });

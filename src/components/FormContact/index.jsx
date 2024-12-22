@@ -70,7 +70,7 @@ export default function FormContact() {
       pending: "Sending information...",
       success: "We have received the information! 🎉",
       error: "An error occurred, please try again",
-    });
+    }, { containerId: "formContact-toast" });
 
     promise.then(() => {
       setFormData({
@@ -88,6 +88,7 @@ export default function FormContact() {
       {isSubmitting && (<div className="submitScene"></div>)}
 
       <ToastContainer
+            containerId="formContact-toast" 
         style={{
           top: "50%",
           left: "50%",

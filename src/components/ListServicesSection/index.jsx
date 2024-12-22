@@ -15,29 +15,14 @@ export const TemplateBlock = (params) => {
  
   <div className="isItemServicesInfo">
      
-      <div className="titleServiceHead">
-        <div className="q-wrapper">
-          <h3 className="text-styles-h3">{params.name}</h3>
-        </div>
-      </div>
+ 
 
-      <div className="titleServiceBody">
-        <div className="text-styles-content">
-          {params.des}
-          {params.isMutil ? (
-            <ul className={s.listChildItem}>
-              {params.isMutil?.map((it, i) => (
-                <li key={i}>{it}</li>
-              ))}
-            </ul>
-          ) : (
-            <></>
-          )}
      
-        </div>
-       
+      <Link className="clear-style" href={`/our-service/${params.url}`}>
+      <div className="titleServiceHead">
+      <h3 className="text-styles-h2" style={{color:"var(--yellow)"}}>{params.name}</h3>
       </div>
-      <Link className="button-item-service" href={`/our-service/${params.url}`}>Explore</Link>
+      </Link>
     </div>
 
   
@@ -65,7 +50,7 @@ export default function ListServicesSection() {
               <div className="text-styles-content">
                 From civil construction and material supply to pavement
                 imprinting and surface treatment, we deliver superior quality
-                and tailored solutions for every project.
+                and tailored solutions for every projects.
               </div>
             </div>
           </div>

@@ -81,7 +81,7 @@ export default function NavbarSection() {
            
        
           </div>
-          <BackgroundGrid/>
+         {/*  <BackgroundGrid/> */}
           <div className="mobile-menu_buttons-wrap">
             <span  onClick={() => handleButtonModalClick()} className="button is-primal btn-demo w-inline-block">
               <div className="text-styles-button" >Get in touch</div>

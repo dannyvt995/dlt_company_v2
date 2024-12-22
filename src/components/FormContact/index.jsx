@@ -122,7 +122,7 @@ export default function FormContact() {
                     <label className={s.label}>
                       Name:
                       <input
-                        placeholder="Fill your name"
+                        placeholder=""
                         type="text"
                         name="name"
                         value={formData.name}
@@ -136,7 +136,7 @@ export default function FormContact() {
                     <label className={s.label}>
                       Phone:
                       <input
-                        placeholder="Fill your phone"
+                        placeholder=""
                         type="text"
                         name="phone"
                         value={formData.phone}
@@ -152,7 +152,7 @@ export default function FormContact() {
                     <label className={s.label}>
                       Email:
                       <input
-                        placeholder="Fill your email"
+                        placeholder=""
                         type="text"
                         name="email"
                         value={formData.email}
